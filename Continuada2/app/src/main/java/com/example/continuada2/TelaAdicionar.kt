@@ -25,21 +25,17 @@ class TelaAdicionar : AppCompatActivity() {
         if (et_adicionar_ano.text.length == 0 || et_adicionar_mensal.text.length == 0 || et_adicionar_mes.text.length == 0) {
             Toast.makeText(this, "${erro_vazio}", Toast.LENGTH_LONG).show()
         } else {
-            adicionarInvestimento(v)
+            valorMinimo(v)
         }
     }
 
-    fun adicionarInvestimento(componente: View) {
-
-        var isMinimo = false;
+    fun valorMinimo(componente: View){
         val aporteMinimo = intent.extras!!.getDouble("aporteMinimo")
         val aporteMensal = et_adicionar_mensal.text.toString().toBigDecimal()
         val erroAporte = getString(R.string.erro_aporteMensal)
-        val erro = getString(R.string.erro)
 
-        while (!isMinimo) {
             if (aporteMensal.toDouble() >= aporteMinimo) {
-                isMinimo = true;
+                adicionarInvestimento(componente)
             } else {
                 Toast.makeText(
                     this,
@@ -47,7 +43,13 @@ class TelaAdicionar : AppCompatActivity() {
                     Toast.LENGTH_LONG
                 ).show()
             }
-        }
+    }
+
+    fun adicionarInvestimento(componente: View) {
+
+        val aporteMensal = et_adicionar_mensal.text.toString().toBigDecimal()
+        val erro = getString(R.string.erro)
+
 
         val taxa = intent.extras!!.getDouble("taxa")
         val aporteInicial = intent.extras!!.getDouble("aporteInicial")

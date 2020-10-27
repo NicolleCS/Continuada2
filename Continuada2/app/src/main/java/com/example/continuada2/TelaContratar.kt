@@ -56,12 +56,13 @@ class TelaContratar : AppCompatActivity() {
 
     fun irTelaInvestir(componente: View) {
 
-        val aporteInicial = et_inicial.text.toString().toBigDecimal()
-        val aporteMensal = et_mensal.text.toString().toBigDecimal()
+        val aporteInicial = et_inicial.text.toString().toDouble()
+        val aporteMensal = et_mensal.text.toString().toDouble()
+        val taxa = escolhaTaxa(componente)
 
         val telaInvestir = Intent(this, TelaInvestir::class.java)
 
-        telaInvestir.putExtra("taxa", escolhaTaxa(componente))
+        telaInvestir.putExtra("taxa", taxa)
         telaInvestir.putExtra("aporteInicial", aporteInicial)
         telaInvestir.putExtra("aporteMinimo", aporteMensal)
         startActivity(telaInvestir)
