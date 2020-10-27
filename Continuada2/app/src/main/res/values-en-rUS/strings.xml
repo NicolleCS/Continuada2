@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Continued2</string>
+    <string name="titulo">Welcome to App GuardeJá!</string>
+    <string name="idioma_pt">Portuguese</string>
+    <string name="idioma_in">English</string>
+    <string name="subtitulo">Choose a tax and starts saving money!</string>
+    <string name="bt_comecar">START</string>
+    <string name="sem_planos">NO PLANS HIRED</string>
+    <string name="bt_contrate_plano">Hire a plan</string>
+    <string name="titulo_contrate">Hire a plan!</string>
+    <string name="contrate_taxa">Choose a tax</string>
+    <string name="contrate_inicial">Initial Contribution</string>
+    <string name="contrate_mensal">Monthly Contribution</string>
+    <string name="contrate_periodo">Period</string>
+    <string name="bt_contratar">HIRE</string>
+    <string name="valor_acumulado">Accumulated Value: U$</string>
+    <string name="escolha_mes">Choose a month:</string>
+    <string name="sem_dados">That month\'s money hasn\'t been saved yet!</string>
+    <string name="subtitulo_escolha_taxa">Choose a tax according to your preference.</string>
+    <string name="bt_procura_mes">SEARCH</string>
+    <string name="bt_adicionar">ADD</string>
+    <string name="titulo_adicionar">Investment of this month!</string>
+    <string name="mes">Month</string>
+    <string name="investido">Success to Invest!</string>
+    <string name="id">ID</string>
+    <string name="resultado_pesquisa">Search\'s Result</string>
+    <string name="data">date</string>
+    <string name="ano">Year</string>
+
+    <drawable name="img_pais">@mipmap/estadosunidos</drawable>
+    <string name="erro_aporteMensal">Enter a monthly contribution bigger than (or equal than)</string>
+    <string name="erro_campoVazio">Enter valid values for all fields</string>
+    <string name="erro_taxaInvalida">Enter a valid tax</string>
+    <string name="erro_aporteInvalido">Enter a valid value on contribution!</string>
+    <string name="erro">Error</string>
+</resources>

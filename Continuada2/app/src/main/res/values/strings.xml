@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Continuada2</string>
+    <string name="titulo">Bem-vindo(a) ao App GuardeJá!</string>
+    <string name="idioma_pt">Português</string>
+    <string name="idioma_in">Inglês</string>
+    <string name="subtitulo">Escolha uma taxa e comece a guardar para atingir seus objetivos!</string>
+    <string name="bt_comecar">COMEÇAR</string>
+    <string name="sem_planos">SEM PLANOS CONTRATADOS</string>
+    <string name="bt_contrate_plano">Contrate um plano</string>
+    <string name="titulo_contrate">Contrate um plano!</string>
+    <string name="subtitulo_escolha_taxa">Escolha a taxa de acordo com a sua preferência.</string>
+    <string name="contrate_taxa">Digite uma taxa (CDI, Selic ou IPCA)</string>
+    <string name="contrate_inicial">Aporte inicial</string>
+    <string name="contrate_mensal">Aporte mensal</string>
+    <string name="contrate_periodo">Período</string>
+    <string name="bt_contratar">CONTRATAR</string>
+    <string name="bt_adicionar">INVESTIR</string>
+    <string name="valor_acumulado">VALOR ACUMULADO: R$</string>
+    <string name="escolha_mes">Digite um id:</string>
+    <string name="bt_procura_mes">PROCURAR</string>
+    <string name="mes">Mês</string>
+    <string name="sem_dados">Ainda não foi investido o dinheiro!</string>
+    <string name="titulo_adicionar">Invista o dinheiro desse mês!</string>
+    <string name="investido">Valor investido com sucesso!</string>
+    <string name="id">ID</string>
+    <string name="data">Data</string>
+    <string name="resultado_pesquisa">Resultado da Pesquisa</string>
+    <string name="ano">Ano</string>
+    <string name="erro_aporteMensal">Insira um aporte mensal acima ou igual a</string>
+    <string name="erro_campoVazio">Insira valores válidos a todos os campos</string>
+    <string name="erro_taxaInvalida">Insira uma taxa válida</string>
+    <string name="erro_aporteInvalido">Insira um valor válido no aporte!</string>
+    <string name="erro">Erro</string>
+
+    <drawable name="img_pais">@mipmap/brasil</drawable>
+</resources>

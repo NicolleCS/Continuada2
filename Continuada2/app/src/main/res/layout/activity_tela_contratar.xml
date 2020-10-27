@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Tela"
+    tools:context=".TelaContratar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_contrate"
+        style="@style/Subtitulo"
+        android:width="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_titulo_contrate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_escolha_taxa"
+        style="@style/Subtitulo"
+        android:width="300dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo_contrate"
+        android:id="@+id/tv_subtitulo_escolha_taxa" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        style="@style/Input"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/contrate_taxa"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitulo_escolha_taxa"
+        android:id="@+id/et_taxa"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        style="@style/Input"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_taxa"
+        android:hint="@string/contrate_inicial"
+        android:id="@+id/et_inicial"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        style="@style/Input"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_inicial"
+        android:hint="@string/contrate_mensal"
+        android:id="@+id/et_mensal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Botao"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_mensal"
+        android:text="@string/bt_contratar"
+        android:onClick="camposOk"
+        android:id="@+id/bt_contratar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
