@@ -27,6 +27,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:hint="@string/contrate_mensal"
+        android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/tv_adicionar"
         android:id="@+id/et_adicionar_mensal" />
 
@@ -37,6 +38,7 @@
         android:layout_marginTop="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/et_adicionar_mensal"
         android:hint="@string/mes"
         android:id="@+id/et_adicionar_mes"/>
@@ -49,6 +51,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_adicionar_mes"
+        android:inputType="number"
         android:hint="@string/ano"
         android:id="@+id/et_adicionar_ano"/>
 
